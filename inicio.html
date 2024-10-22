@@ -6,11 +6,33 @@
     <title>inicio</title>
     <head>
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>Promoción 2024</h1>
-    </header>
+    </div>
+
+    <div class="openDivInfo">
+        <button onclick="mostrar()" id="btnMostrar" class="hide"><i class="fa-solid fa-chevron-down"></i></button>
+
+        <button onclick="ocultar()" id="btnOcultar" class="hide"><i class="fa-solid fa-chevron-up"></i></button>
+
+    </div>
+
+    <div id="divInfo" class="float-div">
+        <h1>Bienvenido</h1>
+        <p><b>Usuario:</b> <br> <?php echo ''.$nombre_usuario; ?></p>
+        <p><b>Correo electronico:</b> <br> <?php echo ''.$nombre_usuario; ?></p><br>
+        <button class="logout"><b><a href="#">Cerrar Sesion</a></b></button> <br>    
+
+    </div>
+
+    <script>
+        var divInfo = document.querySelector('.float-div')
+        var openDivInfo = document.querySelector('.float-div')
+    </script>
+
 </body>
 </html>

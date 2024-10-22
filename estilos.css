@@ -1,22 +1,103 @@
-body {
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-}
-h1 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:azure
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
 }
 
-header{
+body {
+    font-family: var(--body-font);
+    background-color: #121212;
+    justify-content: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
     width: 99vw;
-    height: 10%;
-    background: #1e1e1e;
-    border: 8px solid ;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: double 8px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e), 
+                      linear-gradient(50deg, #1829E2, #D6C017);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-bottom: 10px;
+}
+
+.header h1{
+    text-align: center;
+    color:azure;
+    font-size: 40px;
+}
+
+.float-div{
+    position: fixed;
+    padding: 10px;
+    border: 0.5px #bdbdbd solid;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    width: 15%;
+    max-height: 0;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.float-div .show{
+    max-height: 45%;
+}
+
+.logout{
+    width: 100%;
+    height: 20%;
     border-radius: 15px;
-    border-image-source: linear-gradient(indigo, purple, hotpink);
-    border-image-slice: 1 1 1 1;
-    border-image-width: 0.25rem;
-    border-image: 20px;
+    font-size: 18px;
+    background-color: #D9E348;
+    border-bottom: 5px solid;
+    border-color: #474D0E;
+}
+
+.float-div button:hover{
+    border: none;
+    cursor: pointer;
+    transition: .4s all;
+    transform: translateY(2px);
+}
+
+.logout a{
+    color: #1e1e1e;
+}
+
+.hide{
+    cursor: pointer;
+}
+
+.openDivInfo{
+    width: 15%;
+    height: 5%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    border: .5px solid #bdbdbd;
+    border-radius: 20px;
+}
+
+.openDivInfo button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
