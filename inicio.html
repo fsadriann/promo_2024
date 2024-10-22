@@ -14,7 +14,7 @@
         <h1>Promoción 2024</h1>
     </div>
 
-    <div class="openDivInfo">
+    <div class="btnM-O">
         <button onclick="mostrar()" id="btnMostrar" class="hide"><i class="fa-solid fa-chevron-down"></i></button>
 
         <button onclick="ocultar()" id="btnOcultar" class="hide"><i class="fa-solid fa-chevron-up"></i></button>
@@ -30,8 +30,19 @@
     </div>
 
     <script>
-        var divInfo = document.querySelector('.float-div')
-        var openDivInfo = document.querySelector('.float-div')
+        function mostrar(){
+            document.getElementById('divInfo').style.display = 'flex';
+            document.getElementById('btnMostrar').style.display = 'none'
+            document.getElementById('btnOcultar').style.display = 'flex'
+            document.getElementById('btnOcultar').style.justifyContent = 'center'
+        }
+
+        function ocultar(){
+            document.getElementById('divInfo').style.display = 'none';
+            document.getElementById('btnMostrar').style.display = 'flex'
+            document.getElementById('btnOcultar').style.display = 'none'
+            document.getElementById('btnOcultar').style.justifyContent = 'center'
+        }
     </script>
 
 </body>
