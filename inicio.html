@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Prom 2024</title>
     <head>
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,34 +14,37 @@
         <h1>Promoción 2024</h1>
     </div>
 
-    <div class="btnM-O">
-        <button onclick="mostrar()" id="btnMostrar" class="hide"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="menu">
 
-        <button onclick="ocultar()" id="btnOcultar" class="hide"><i class="fa-solid fa-chevron-up"></i></button>
+            <div class="btnM-O">
+            </div>
+    
+            <div id="divInfo" class="float-div">
+                <h1>Bienvenido</h1>
+                <p><b>Usuario:</b> <br> <?php echo ''.$nombre_usuario; ?></p>
+                <p><b>Correo electronico:</b> <br> <?php echo ''.$nombre_usuario; ?></p><br>
+                <button class="logout"><b><a href="#">Cerrar Sesion</a></b></button>    
+    
+            </div>
+        </div>
 
-    </div>
 
-    <div id="divInfo" class="float-div">
-        <h1>Bienvenido</h1>
-        <p><b>Usuario:</b> <br> <?php echo ''.$nombre_usuario; ?></p>
-        <p><b>Correo electronico:</b> <br> <?php echo ''.$nombre_usuario; ?></p><br>
-        <button class="logout"><b><a href="#">Cerrar Sesion</a></b></button> <br>    
 
+
+
+    <div class="main">
+        <h1>¿Qué deseas hacer?</h1>
     </div>
 
     <script>
-        function mostrar(){
-            document.getElementById('divInfo').style.display = 'flex';
-            document.getElementById('btnMostrar').style.display = 'none'
-            document.getElementById('btnOcultar').style.display = 'flex'
-            document.getElementById('btnOcultar').style.justifyContent = 'center'
+        let menu = document.querySelector('.btnM-O');
+        menu.onclick = function(){
+            menu.classList.toggle('active');
         }
 
-        function ocultar(){
-            document.getElementById('divInfo').style.display = 'none';
-            document.getElementById('btnMostrar').style.display = 'flex'
-            document.getElementById('btnOcultar').style.display = 'none'
-            document.getElementById('btnOcultar').style.justifyContent = 'center'
+        let active = document.querySelector('.menu');
+        active.onclick = function(){
+            active.classList.toggle('active');
         }
     </script>
 
