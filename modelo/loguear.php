@@ -9,6 +9,6 @@ $clave = $_POST['clave'];
 
 // consulta BD
 
-$consulta = "SELECT nombre_usuario, correo_usuario, password_usuario, COUNT(*) AS contar FROM Usuario WHERE correo_usuario = '$usuario' AND password_usuario = '$clave' ";
+$consulta = "SELECT nombre_usuario, correo_usuario, clave_usuario, COUNT(*) AS contar FROM usuarios WHERE correo_usuario = '$usuario' AND clave_usuario = '$clave' ";
 
 ?>
