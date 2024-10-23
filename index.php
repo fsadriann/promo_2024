@@ -9,17 +9,17 @@
 <body class="index">
     <h1>Prom 2024</h1>
     <div class="login">
-        <form action="" method="post">
+        <form action="modelo/loguear.php" method="post">
             <div>
                 <img src="img/escudo-blanco.png" alt="Escudo">
             </div>
 
             <p>Correo:</p>
-            <input type="text" placeholder="Ingrese su correo electronico" name="usuario">
+            <input type="text" placeholder="Ingrese su correo electronico" name="usuario" autocomplete="off">
 
 
             <p>Contraseña:</p>
-            <input type="password" placeholder="Ingrese su contraseña" name="clave">
+            <input type="password" placeholder="Ingrese su contraseña" name="clave" autocomplete="off">
             <br>
             <input type="submit" value="Ingresar">
             <a href="#">Registrarse</a>

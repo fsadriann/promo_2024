@@ -10,7 +10,7 @@ ini_set('display_errors', '1');
 DEFINE('USER','root');
 DEFINE('PW','');
 DEFINE('HOST','localhost');
-DEFINE('BD','bd_prom200');
+DEFINE('BD','prom200');
 
 $conexion = mysqli_connect('USER','PW','HOST','BD');
 
