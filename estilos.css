@@ -171,14 +171,19 @@ a{
 .main h1{
     font-size: 30px;
 }
+
+.index h1{
+    margin-bottom: 50px;
+}
+
+.index p{
+    font-weight: 600;
+}
+
 .index{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.index h1{
-    margin-bottom: 100px;
 }
 
 .login{
@@ -191,10 +196,19 @@ a{
     width: 30%;
 }
 
+.login img{
+    width: 100px;    
+}
+
 .login form{
     padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.login div{
+    display: flex;
     justify-content: center;
 }
 
@@ -220,6 +234,7 @@ a{
     background: #1e1e1e;
     color: #fff;
     font-weight: 600;
+    font-size: 15px;
 }
 
 .login input[type='submit']:hover{
@@ -232,6 +247,7 @@ a{
 .login a{
     text-decoration: underline;
     text-align: center;
+    font-size: 12px;
 }
 
 .login a:hover{
