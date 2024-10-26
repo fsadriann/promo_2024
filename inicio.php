@@ -35,10 +35,12 @@
             </div>
     
             <div id="divInfo" class="float-div">
-                <h1>Bienvenido</h1>
-                <p><b>Usuario:</b> <br> <?php echo ''.$nombre_usuario; ?></p>
-                <p><b>Correo electronico:</b> <br> <?php echo ''.$nombre_usuario; ?></p><br>
-                <button class="logout"><b><a href="#">Cerrar Sesion</a></b></button>    
+                <h3>Bienvenido</h3>
+                <p><?php echo ''.$nombre_usuario; ?></p>
+                
+                <p><?php echo ''.$correo_usuario; ?></p>
+                <br>
+                <button class="logout"><b><a href="modelo/cerrar_sesion.php">Cerrar Sesion</a></b></button>    
     
             </div>
         </div>
