@@ -16,6 +16,11 @@
     // resultado de la consulta 
     $resultado = mysqli_fetch_array($ejecucion_consulta);
 
+    if (empty($usuario or $clave)) {
+        echo '<script type="text/javascript">alert("Por favor, llene los campos.");
+        </script>';
+    }
+
     if($resultado['contar']>0)
     {
         $_SESSION['username'] = $resultado['nombre_usuario'];
@@ -24,6 +29,7 @@
     }
     else
     {
-        echo "<h1>Usuario o contraseña incorrecta</h1>";
+        echo '<script type="text/javascript">alert("Usuario o contraseña incorrecta"); window.location.href=" ../index.php"
+        </script>';
     }
 ?>
