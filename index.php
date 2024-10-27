@@ -22,7 +22,6 @@
             <input type="password" placeholder="Ingrese su contraseña" name="clave" autocomplete="off">
             <br>
             <input type="submit" value="Ingresar">
-            <a href="#">Registrarse</a>
         </form>
     </div>
 
