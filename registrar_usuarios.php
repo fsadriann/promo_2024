@@ -38,7 +38,7 @@
         <div class="login">
         <form  action="modelo/reg_usuarios.php" method="post">
                 <b><p>Nombre: </p></b>
-                <input type="text" name="nombre" id="" placeholder="Nombre usuario" require>
+                <input type="text" name="usuario" id="" placeholder="Nombre usuario" require>
                 <br>
                 <b><p>Correo: </p></b>
                 <input type="text" name="correo" id="" placeholder="Correo usuario" require>

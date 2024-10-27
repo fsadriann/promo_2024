@@ -275,3 +275,49 @@ a{
     opacity: .7;
     transition: .3s;
 }
+
+.consultas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 5px #bdbdbd solid;
+    padding: 20px;
+}
+
+.consultas table{
+    border: none;
+}
+
+.consultas table th{
+    border-radius: 20px;
+    border: 3px solid #bdbdbd;
+    overflow: hidden;
+    padding: 15px;
+    outline: none;
+    background: linear-gradient(60deg,#D6C017,#1829E2);
+    margin-bottom: 5px;
+}
+.consultas table td{
+    padding: 15px;
+    border: 3px solid #bdbdbd;
+    border-radius: 20px;
+}
+
+.consultas a{
+    background-color: #fff;
+    border: 3px solid #121212;
+    color: #1e1e1e;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.consultas a:hover{
+    background: #1e1e1e;
+    border: 3px solid #bdbdbd;
+    transition: .4s;
+    color: #fff;
+
+}

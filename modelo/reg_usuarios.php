@@ -10,7 +10,7 @@
 
     if(isset($_SESSION['correo']))
     {
-        $nombre = $_POST['nombre'];
+        $nombre = $_POST['usuario'];
         $correo = $_POST['correo'];
         $clave = $_POST['clave'];
 

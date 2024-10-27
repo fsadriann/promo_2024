@@ -48,7 +48,7 @@
                     <h3>Registros</h3>
                     <li><a href="registrar_usuarios.php">Registrar Usuarios</a></li>
                     <h3>Consultas</h3>
-                    <li><a href="consultar_usuarios.php">Consultar Usuarios</a></li>
+                    <li><a href="modelo/consultar_usuarios.php">Consultar Usuarios</a></li>
                 </ul>
             </nav>
             
