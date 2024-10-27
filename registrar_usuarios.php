@@ -1,4 +1,3 @@
-
 <?php
     require 'modelo/conexion.php';
 
@@ -12,21 +11,17 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prom 2024</title>
-    <head>
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <title>Registrar Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Promoción 2024</h1>
+<div class="header">
+        <h1>Registrar Usuarios</h1>
     </div>
     <div class="menu">
         <div class="btnM-O">
@@ -39,23 +34,23 @@
             <button class="logout"><b><a href="modelo/cerrar_sesion.php">Cerrar Sesion</a></b></button>
         </div>
     </div>
-
     <div class="main">
-        <h1>¿Qué deseas hacer?</h1>
-        <div class="contenedor">
-            <nav>
-                <ul>
-                    <h3>Registros</h3>
-                    <li><a href="registrar_usuarios.php">Registrar Usuarios</a></li>
-                    <h3>Consultas</h3>
-                    <li><a href="consultar_usuarios.php">Consultar Usuarios</a></li>
-                </ul>
-            </nav>
-            
+        <div class="login">
+        <form  action="modelo/reg_usuarios.php" method="post">
+                <b><p>Nombre: </p></b>
+                <input type="text" name="nombre" id="" placeholder="Nombre usuario" require>
+                <br>
+                <b><p>Correo: </p></b>
+                <input type="text" name="correo" id="" placeholder="Correo usuario" require>
+                <b><p>Contraseña: </p></b>
+                <input type="password" name="clave" id="" placeholder="Clave usuario" require>
+                <br>
+                <input type="submit" value="Ingresar">
+        </form>
         </div>
     </div>
-
     <script src="main.js"></script>
+
 
 </body>
 </html>
