@@ -21,15 +21,15 @@
         </script>';
     }
 
-    if($resultado['contar']>0)
+    if($resultado['correo_usuario']=='sistemas@colegioguanenta.edu.co')
     {
+
         $_SESSION['username'] = $resultado['nombre_usuario'];
         $_SESSION['correo'] = $usuario;
-        header("location: ../inicio.php");
+        header("location: ../inicio_admin.php");
     }
     else
     {
-        echo '<script type="text/javascript">alert("Usuario o contraseña incorrecta"); window.location.href=" ../index.php"
-        </script>';
+        header("location: ../inicio.php");
     }
 ?>

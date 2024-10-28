@@ -55,7 +55,7 @@ ini_set('display_errors', '1');
                 echo "</table>";
                 echo "<br>";
 
-                echo "<div id='home'><a href='../inicio.php'>Volver a inicio</a></div>";
+                echo "<div id='home'><a href='../inicio_admin.php'>Volver a inicio</a></div>";
             }
 
 

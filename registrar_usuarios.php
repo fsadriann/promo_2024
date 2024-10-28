@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<div class="header">
-        <h1>Registrar Usuarios</h1>
+    <div class="header">
+            <h1>Registrar Usuarios</h1>
     </div>
     <div class="menu">
         <div class="btnM-O">
@@ -36,19 +36,22 @@
     </div>
     <div class="main">
         <div class="login">
-        <form  action="modelo/reg_usuarios.php" method="post">
-                <b><p>Nombre: </p></b>
-                <input type="text" name="usuario" id="" placeholder="Nombre usuario" require>
-                <br>
-                <b><p>Correo: </p></b>
-                <input type="text" name="correo" id="" placeholder="Correo usuario" require>
-                <b><p>Contraseña: </p></b>
-                <input type="password" name="clave" id="" placeholder="Clave usuario" require>
-                <br>
-                <input type="submit" value="Ingresar">
-        </form>
+            <form  action="modelo/reg_usuarios.php" method="post">
+                    <b><p>Nombre: </p></b>
+                    <input type="text" name="usuario" id="" placeholder="Nombre usuario" require>
+                    <br>
+                    <b><p>Correo: </p></b>
+                    <input type="text" name="correo" id="" placeholder="Correo usuario" require>
+                    <b><p>Contraseña: </p></b>
+                    <input type="password" name="clave" id="" placeholder="Clave usuario" require>
+                    <br>
+                    <input type="submit" value="Ingresar">
+            </form>
         </div>
+        <button><a href="inicio_admin.php">Volver a inicio</a></button>
     </div>
+    
+
     <script>
         let menu = document.querySelector('.btnM-O');
         menu.onclick = function(){
