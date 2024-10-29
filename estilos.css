@@ -394,10 +394,6 @@ a{
     height: 200px;
     transition: transform 0.8s ease; 
 }
-    
-.img:hover{
-    transform: scale(1.1);
-}
 
 @media (max-width: 450px) {
     .btnM-O{
