@@ -179,12 +179,6 @@ a{
     opacity: 1;
 }
 
-#btnOcultar{
-    display: none;
-    justify-content: center;
-}
-
-
 .main{
     margin-top: 10%;
     height: 100%;
@@ -436,4 +430,18 @@ a{
     .consultas table{
         word-break: break-all;
     }
+}
+
+.section {
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.section img {
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.btn_mostrar{
+    display: none;
 }
