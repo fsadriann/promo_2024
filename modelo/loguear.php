@@ -30,6 +30,6 @@
     }
     else
     {
-        header("location: ../inicio_usuarios.php");
+        header("location: ../index.php");
     }
 ?>
