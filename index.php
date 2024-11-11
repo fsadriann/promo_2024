@@ -33,25 +33,25 @@
     <h2>Seleccione un grado</h2>
         <div class="container">
             <div class="section">
-                <img class="img" onclick="expandSection(this)" src="img/11-1.jpeg" alt="11-1" width="300" height="200">
+                <img class="img" onclick="expandSection(this)" src="img/11-1.jpg" alt="11-1" width="300" height="200">
                 <h4>11-1</h4>
             </div>
             <div class="section">
-                <img class="img" onclick="expandSection(this)" src="img/11-2.jpeg" alt="11-2" width="300" height="200">
+                <img class="img" onclick="expandSection(this)" src="img/11-2.jpg" alt="11-2" width="300" height="200">
                 <h4>11-2</h4>
             </div>
             <div class="section">
-                <img class="img" onclick="expandSection(this)" src="img/11-3.jpeg" alt="11-3" width="300" height="200">
+                <img class="img" onclick="expandSection(this)" src="img/11-3.jpg" alt="11-3" width="300" height="200">
                 <h4>11-3</h4>
             </div>
         </div>
     <div class="container" >
         <div class="section">
-            <img class="img" onclick="expandSection(this)" src="img/11-4.jpeg" alt="11-4" width="300" height="200">
+            <img class="img" onclick="expandSection(this)" src="img/11-4.jpg" alt="11-4" width="300" height="200">
                 <h4>11-4</h4>
         </div>
         <div class="section">
-            <img class="img" onclick="expandSection(this)" src="img/11-5.jpeg" alt="11-5" width="300" height="200">
+            <img class="img" onclick="expandSection(this)" src="img/11-5.jpg" alt="11-5" width="300" height="200">
                 <h4>11-5</h4>
         </div>
 <button class="btn_mostrar" onclick="showAll()">Mostrar Todos</button>
